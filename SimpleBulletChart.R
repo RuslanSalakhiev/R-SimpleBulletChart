@@ -2,10 +2,11 @@
 
 library(ggplot2)
 library(lubridate)
+library(ggthemes)
 # Difference between real progress and planned
 
 Today <- as.Date("2016-02-17")
-LastDayofMonth <- ceiling_date(today, "month")-1
+LastDayofMonth <- ceiling_date(Today, "month")-1
 
 # performance according to plan (percent)
 
